@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane fx:id="menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <tabs>
+    <Tab id="Burger" fx:id="burger" text="BURGERLAR">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="600.0">
+               <children>
+                  <HBox prefHeight="470.0" prefWidth="600.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="150.0">
+                           <children>
+                              <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" translateX="10.0">
+                                 <image>
+                                    <Image url="@../Foto/cheddarBurger.jpg" />
+                                 </image></ImageView>
+                              <Label text="CHEDDARBURGER" textFill="RED" translateY="20.0">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Kofte" translateX="20.0" translateY="30.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Cheddar Peyniri" translateX="20.0" translateY="40.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Domates" translateX="20.0" translateY="50.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Sogan" translateX="20.0" translateY="60.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Marul" translateX="20.0" translateY="70.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Barbeku Sos" translateX="20.0" translateY="80.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="FIYAT : 13,25 " textFill="BLUE" translateX="20.0" translateY="90.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button id="CheddarBurger" fx:id="cheddarBurger" mnemonicParsing="false" onAction="#cheddar" text="EKLE" translateX="48.0" translateY="100.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="150.0">
+                           <children>
+                              <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" translateX="10.0">
+                                 <image>
+                                    <Image url="@../Foto/doubleKofte.jpg" />
+                                 </image></ImageView>
+                              <Label prefHeight="38.0" prefWidth="76.0" text="DOUBLE " textFill="RED" translateX="35.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="KOFTEBURGER" textFill="RED" translateX="12.0" translateY="-15.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Double Kofte" translateX="20.0" translateY="-10.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Domates" translateX="20.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Sogan" translateX="20.0" translateY="10.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Marul" translateX="20.0" translateY="20.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Ketcap" translateX="20.0" translateY="30.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Mayonez" translateX="20.0" translateY="40.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="FIYAT : 17,50" textFill="BLUE" translateX="20.0" translateY="50.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button id="DobleKofteBurger" fx:id="doubleKofteBurger" mnemonicParsing="false" onAction="#doubleKofte" text="EKLE" translateX="48.0" translateY="60.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="150.0">
+                           <children>
+                              <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" translateX="10.0">
+                                 <image>
+                                    <Image url="@../Foto/Kofte.jpg" />
+                                 </image></ImageView>
+                              <Label text="KOFTEBURGER" textFill="RED" translateX="12.0" translateY="20.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Kofte" translateX="20.0" translateY="30.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Domates" translateX="20.0" translateY="40.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Sogan" translateX="20.0" translateY="50.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Marul" translateX="20.0" translateY="60.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Ketcap" translateX="20.0" translateY="70.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Mayonez" translateX="20.0" translateY="80.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="FIYAT : 11,50" textFill="BLUE" translateX="20.0" translateY="90.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button id="KofteBurger" fx:id="kofteBurger" mnemonicParsing="false" onAction="#kofte" text="EKLE" translateX="48.0" translateY="100.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="150.0">
+                           <children>
+                              <ImageView fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" translateX="10.0">
+                                 <image>
+                                    <Image url="@../Foto/tavuk.jpg" />
+                                 </image></ImageView>
+                              <Label text="TAVUKBURGER" textFill="RED" translateX="10.0" translateY="20.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Tavuk" translateX="20.0" translateY="30.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Domates" translateX="20.0" translateY="40.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Sogan" translateX="20.0" translateY="50.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Marul" translateX="20.0" translateY="60.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Mayonez" translateX="20.0" translateY="70.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label text="FIYAT : 8,25" textFill="BLUE" translateX="20.0" translateY="110.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button id="TavukBurger" fx:id="tavukBurger" mnemonicParsing="false" onAction="#tavuk" text="EKLE" translateX="48.0" translateY="120.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab id="Urun" fx:id="urun" onSelectionChanged="#urunC" text="URUNLER">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="600.0">
+               <children>
+                  <HBox prefHeight="470.0" prefWidth="600.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="150.0">
+                           <children>
+                              <Label text="YAN URUNLER" textFill="RED" translateX="5.0" translateY="10.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="80.0" fitWidth="100.0" pickOnBounds="true" translateX="30.0" translateY="10.0">
+                                 <image>
+                                    <Image url="@../Foto/patates.jpg" />
+                                 </image></ImageView>
+                              <ComboBox fx:id="patatesC" prefWidth="150.0" promptText="Yok" translateY="20.0" visibleRowCount="4" />
+                              <ImageView fitHeight="80.0" fitWidth="100.0" layoutX="10.0" layoutY="40.0" pickOnBounds="true" translateX="30.0" translateY="40.0">
+                                 <image>
+                                    <Image url="@../Foto/soganhalkasi.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ComboBox fx:id="soganHalkasiC" prefWidth="150.0" promptText="Yok" translateY="50.0" />
+                              <ImageView id="TavukBaget" fitHeight="80.0" fitWidth="100.0" layoutX="10.0" layoutY="171.0" pickOnBounds="true" translateX="30.0" translateY="70.0">
+                                 <image>
+                                    <Image url="@../Foto/baget.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ComboBox fx:id="tavukBagetC" layoutX="10.0" layoutY="226.0" prefWidth="150.0" promptText="Yok" translateY="80.0" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="150.0">
+                           <children>
+                              <Label text="ICECEKLER" textFill="RED" translateX="30.0" translateY="10.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateX="60.0" translateY="10.0">
+                                 <image>
+                                    <Image url="@../Foto/kola.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ComboBox fx:id="kolaC" prefWidth="150.0" promptText="Yok" translateY="15.0" />
+                              <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="40.0" pickOnBounds="true" translateX="50.0" translateY="20.0">
+                                 <image>
+                                    <Image url="@../Foto/fanta.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ComboBox fx:id="fantaC" layoutX="10.0" layoutY="91.0" prefWidth="150.0" promptText="Yok" translateY="25.0" />
+                              <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="131.0" pickOnBounds="true" translateX="50.0" translateY="30.0">
+                                 <image>
+                                    <Image url="@../Foto/sprite.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ComboBox fx:id="spriteC" layoutX="10.0" layoutY="91.0" prefWidth="150.0" promptText="Yok" translateY="35.0" />
+                              <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="221.0" pickOnBounds="true" translateX="50.0" translateY="40.0">
+                                 <image>
+                                    <Image url="@../Foto/icetea.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ComboBox fx:id="sogukCayC" layoutX="10.0" layoutY="243.0" prefWidth="150.0" promptText="Yok" translateY="45.0" />
+                              <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="312.0" pickOnBounds="true" translateX="50.0" translateY="50.0">
+                                 <image>
+                                    <Image url="@../Foto/ayran.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ComboBox fx:id="ayranC" layoutX="10.0" layoutY="243.0" prefWidth="150.0" promptText="Yok" translateY="55.0" />
+                           </children></VBox>
+                        <VBox prefHeight="200.0" prefWidth="150.0">
+                           <children>
+                              <Label text="SOSLAR" textFill="RED" translateX="35.0" translateY="10.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" translateX="50.0" translateY="10.0">
+                                 <image>
+                                    <Image url="@../Foto/mayonez.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ComboBox fx:id="mayonezC" prefWidth="150.0" promptText="Yok" translateY="15.0" />
+                              <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="40.0" pickOnBounds="true" translateX="50.0" translateY="20.0">
+                                 <image>
+                                    <Image url="@../Foto/ketcap.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ComboBox fx:id="ketcapC" layoutX="10.0" layoutY="91.0" prefWidth="150.0" promptText="Yok" translateY="25.0" />
+                              <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="131.0" pickOnBounds="true" translateX="50.0" translateY="30.0">
+                                 <image>
+                                    <Image url="@../Foto/barbeku.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ComboBox fx:id="barbekuC" layoutX="10.0" layoutY="167.0" prefWidth="150.0" promptText="Yok" translateY="35.0" />
+                              <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="221.0" pickOnBounds="true" translateX="50.0" translateY="40.0">
+                                 <image>
+                                    <Image url="@../Foto/hardal.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ComboBox fx:id="hardalC" layoutX="10.0" layoutY="243.0" prefWidth="150.0" promptText="Yok" translateY="45.0" />
+                              <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="312.0" pickOnBounds="true" translateX="50.0" translateY="50.0">
+                                 <image>
+                                    <Image url="@../Foto/acisos.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ComboBox fx:id="aciC" layoutX="10.0" layoutY="319.0" prefWidth="150.0" promptText="Yok" translateY="55.0" />
+                           </children></VBox>
+                        <VBox prefHeight="200.0" prefWidth="150.0">
+                           <children>
+                              <Label text="TATLILAR" textFill="RED" translateX="30.0" translateY="10.0">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="90.0" fitWidth="100.0" pickOnBounds="true" translateX="25.0" translateY="10.0">
+                                 <image>
+                                    <Image url="@../Foto/suffle.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ComboBox fx:id="suffleC" prefWidth="150.0" promptText="Yok" translateY="20.0" />
+                              <ImageView fitHeight="90.0" fitWidth="100.0" layoutX="10.0" layoutY="40.0" pickOnBounds="true" translateX="25.0" translateY="50.0">
+                                 <image>
+                                    <Image url="@../Foto/tart.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button id="Odeme" fx:id="ode" mnemonicParsing="false" onAction="#ode" text="ODEME" translateX="35.0" translateY="140.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <ComboBox fx:id="tartC" layoutX="10.0" layoutY="131.0" prefWidth="150.0" promptText="Yok" translateY="30.0" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets></VBox>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="odeme" disable="true" text="ODEME">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="genel" layoutX="112.0" layoutY="46.0" prefHeight="419.0" prefWidth="238.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextArea>
+                  <Label alignment="BASELINE_CENTER" layoutX="110.0" prefHeight="46.0" prefWidth="241.0" text="URUNLERINIZ">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="cikis" layoutX="397.0" layoutY="276.0" mnemonicParsing="false" onAction="#cikis" prefHeight="66.0" prefWidth="149.0" text="SATIN AL">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="fiyat" alignment="BASELINE_CENTER" layoutX="396.0" layoutY="156.0" prefHeight="78.0" prefWidth="150.0">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
